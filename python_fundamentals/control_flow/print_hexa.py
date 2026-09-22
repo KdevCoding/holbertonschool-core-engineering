@@ -4,5 +4,5 @@ number = 0
 
 while number < 99:
    
-    print(number, "= " + hex(number))
+    print(str(number) + " = " + hex(number))
     number += 1
