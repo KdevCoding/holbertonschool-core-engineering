@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 dig1 = 0
-dig2 = 0
+dig2 = 1
 
 while dig1 < 10:
     while dig2 < 10:
@@ -12,4 +12,3 @@ while dig1 < 10:
     dig2 = dig1
 
 print("99")
-
