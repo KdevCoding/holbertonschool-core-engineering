@@ -9,6 +9,6 @@ while dig1 < 10:
         print("{}, ".format(dig2), end="")
         dig2 += 1
     dig1 += 1
-    dig2 = dig1
+    dig2 = dig1 + 1
 
 print("99")
