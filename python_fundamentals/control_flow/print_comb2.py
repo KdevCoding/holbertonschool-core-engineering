@@ -3,7 +3,7 @@
 number = 0
 
 while number < 99:
-    print(f"{number:02d}, ", end="")
+    print("{:02d}, ".format(number), end="")
     number += 1
-print(f"{number:02d}")
+print("{:02d}".format(number))
 number += 1
