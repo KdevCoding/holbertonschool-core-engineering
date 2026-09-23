@@ -3,7 +3,7 @@
 dig1 = 0
 dig2 = 1
 
-while dig1 < 10:
+while dig1 < 8:
     while dig2 < 10:
         print("{}".format(dig1), end="")
         print("{}, ".format(dig2), end="")
@@ -11,4 +11,4 @@ while dig1 < 10:
     dig1 += 1
     dig2 = dig1 + 1
 
-print("99")
+print("89")
