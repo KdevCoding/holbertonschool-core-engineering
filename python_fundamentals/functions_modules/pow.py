@@ -2,6 +2,10 @@
 
 def pow(a, b):
     res = 1
-    for i in range(b):
-        res = res * a
+    if b >= 0:
+        for i in range(b):
+            res = res * a
+    else:
+        for i in range(-b):
+            res = res / a
     return res
