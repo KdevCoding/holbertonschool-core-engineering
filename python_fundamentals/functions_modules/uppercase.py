@@ -6,5 +6,5 @@ def uppercase(str):
         if c in range(97, 123):
             c -= 32
 
-        print(chr(c), end='')
-    print()
+        print("".format(chr(c)), end='')
+    print("")
