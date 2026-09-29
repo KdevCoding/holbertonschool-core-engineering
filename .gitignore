@@ -1,3 +1,4 @@
 .vscode/settings.json
 python_fundamentals/core_data_structures/main.py
 python_fundamentals/exception_handling/main.py
+python_oop/classes_and_object_model/main.py
