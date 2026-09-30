@@ -56,4 +56,4 @@ class Square:
         return ret
 
     def my_print(self):
-        print(self.shape())
+        print(self.shape(), end='')
