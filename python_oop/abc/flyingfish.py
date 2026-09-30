@@ -3,23 +3,35 @@
 """
 
 
-class SwimMixin():
+class Fish():
     def swim(self):
-        print("The creature swims!")
+        print("The fish is swimming")
+
+    def habitat(self):
+        print("The fish lives in water")
 
 
-class FlyMixin():
+class Bird():
     def fly(self):
-        print("The creature flies!")
+        print("The bird is flying")
+
+    def habitat(self):
+        print("The bird lives in the sky")
 
 
-class Dragon (SwimMixin, FlyMixin):
-    def roar(self):
-        print("The dragon roars!")
+class FlyingFish(Fish, Bird):
+    def fly(self):
+        print("The flying fish is soaring!")
+
+    def swim(self):
+        print("The flying fish is swimming!")
+
+    def habitat(self):
+        print("The flying fish lives both in water and the sky!")
 
 
 if __name__ == "__main__":
-    dragon = Dragon()
-    dragon.swim()
-    dragon.fly()
-    dragon.roar()
+    flying_fish = FlyingFish()
+    flying_fish.swim()
+    flying_fish.fly()
+    flying_fish.habitat()
