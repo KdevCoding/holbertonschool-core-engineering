@@ -30,7 +30,8 @@ class FlyingFish(Fish, Bird):
         print("The flying fish lives both in water and the sky!")
 
 
-flying_fish = FlyingFish()
-flying_fish.swim()
-flying_fish.fly()
-flying_fish.habitat()
+if __name__ == "__main__":
+    flying_fish = FlyingFish()
+    flying_fish.swim()
+    flying_fish.fly()
+    flying_fish.habitat()
