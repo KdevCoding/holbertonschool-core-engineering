@@ -54,7 +54,7 @@ class Square:
                 ret += "#" * self.size
                 ret += "\n"
         else:
-            ret = "/n"
+            ret = "\n"
         return ret
 
     def my_print(self):
