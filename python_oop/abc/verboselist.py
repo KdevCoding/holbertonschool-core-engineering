@@ -18,7 +18,7 @@ class VerboseList(list):
 
     def pop(self, i=-1):
         print("Popped {} from the list.".format(self.__getitem__(i)))
-        super().pop(i)
+        return super().pop(i)
 
 
 if __name__ == "__main__":
