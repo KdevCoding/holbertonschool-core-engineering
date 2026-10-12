@@ -14,7 +14,7 @@ def read_file(filename=""):
         read_data = f.read()
 
     f.closed
-    print("{}".format(read_data))
+    print("{}".format(read_data), end="")
 
 
 if __name__ == "__main__":
