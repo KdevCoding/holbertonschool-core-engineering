@@ -23,6 +23,7 @@ def write_file(filename="", text=""):
 
 if __name__ == "__main__":
     write_file("my_file_0.txt")
-    
-    nb_characters = write_file("my_first_file.txt", "This School is so cool!\n")
+
+    nb_characters = write_file("my_first_file.txt",
+                               "This School is so cool!\n")
     print(nb_characters)
