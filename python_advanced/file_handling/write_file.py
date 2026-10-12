@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""read_file
+"""write_file
 """
 
 
 def write_file(filename="", text=""):
-    """Read a file and print contents
+    """write/create a file
 
     Args:
-        filename (str, optional): file. Defaults to "".
+        filename (str, optional): filename. Defaults to "".
+        text (str, optional): text to wrtire. Defaults to "".
+
+    Returns:
+        _type_: count of char written
     """
 
     with open(filename, 'w') as f:
@@ -15,6 +19,7 @@ def write_file(filename="", text=""):
 
     f.closed
     return c
+
 
 if __name__ == "__main__":
     write_file("my_file_0.txt")
