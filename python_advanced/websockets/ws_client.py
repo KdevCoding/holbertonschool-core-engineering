@@ -6,8 +6,8 @@ from websockets.asyncio.client import connect
 
 
 async def hello():
-    async with connect("ws://127.0.0.1:8765") as websocket:
-        await websocket.send("Hello")
+    async with connect("ws://localhost:8765") as websocket:
+        await websocket.send("Hello WebSocket")
         message = await websocket.recv()
         print(message, end="")
 
