@@ -8,9 +8,9 @@ from websockets.asyncio.server import serve
 async def echo(websocket):
     async for message in websocket:
         if len(message.strip()) == 0:
-          message = "ERR:EMPTY"
+            message = "ERR:EMPTY"
         else:
-          message = f"OK:{message}"
+            message = f"OK:{message}"
         await websocket.send(message)
 
 
