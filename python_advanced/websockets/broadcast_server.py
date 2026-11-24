@@ -2,9 +2,10 @@
 """Echo server using the asyncio API."""
 
 import asyncio
-from websockets.asyncio.server import serve,broadcast
+from websockets.asyncio.server import serve, broadcast
 
 CLIENTS = set()
+
 
 async def handler(websocket):
     CLIENTS.add(websocket)
@@ -13,6 +14,7 @@ async def handler(websocket):
             broadcast(CLIENTS, f"B:{message}")
     finally:
         CLIENTS.discard(websocket)
+
 
 async def main():
     server = await serve(handler, "127.0.0.1", 8765)
